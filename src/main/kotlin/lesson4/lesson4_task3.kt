@@ -1,16 +1,16 @@
 package lesson4
 
 fun main(){
-    val weatherToday = "солнечная погода"
-    val lightingToday = "тент раскрыт"
-    val humidityToday = "влажность 20"
-    val seasonToday = "зима"
-    println("Благоприятные ли условия сейчас для роста бобовых?${(WEATHER == weatherToday) && 
-            (LIGHTING == lightingToday) &&
+    val weatherToday = true
+    val isTentOpen = true
+    val humidityToday = 20
+    val isWinter = true
+    println("Благоприятные ли условия сейчас для роста бобовых?${(GOOD_WEATHER == weatherToday) && 
+            (TENT_OPEN == isTentOpen) &&
             (HUMIDITY == humidityToday) &&
-            (SEASON == seasonToday)}")
+            (BEANS_SEASON == isWinter)}")
 }
-const val WEATHER = "солнечная погода"
-const val LIGHTING = "тент раскрыт"
-const val HUMIDITY = "влажность 20"
-const val SEASON = "не зима"
+const val GOOD_WEATHER = true
+const val TENT_OPEN = true
+const val HUMIDITY = 20
+const val BEANS_SEASON = false

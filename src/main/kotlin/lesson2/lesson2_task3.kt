@@ -1,13 +1,15 @@
 package lesson2
 
 fun main(){
-    val hour = 9 * 60
+    val hour = 9
+    val timeInMin = 9 * 60
+    val travelTime = 457
     val min = 39
 
-    val totalTimeInMin = 457+ hour + min
+    val totalTimeInMin = travelTime + timeInMin + min
     val hourOfArrival = totalTimeInMin / 60
     val minOfArrival = totalTimeInMin % hourOfArrival
-    println("${hourOfArrival}:${minOfArrival}")
+    println("$hourOfArrival:$minOfArrival")
 
 }
 

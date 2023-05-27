@@ -1,7 +1,8 @@
 package lesson5
 
 fun main(){
-    val yearOfBirth = readLine()!!.toInt()
+    println("Введите год рождения")
+    val yearOfBirth = readLine()?.toInt() ?: 1
     val age = 2023 - yearOfBirth
     if (age >= AGE_OF_MAJORITY) println( "Показать экран со скрытым контентом")
     else println("Вернуться на главный экран")

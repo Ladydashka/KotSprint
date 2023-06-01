@@ -6,8 +6,8 @@ fun main(){
     val number2 = readLine()?.toInt()
 
    when{
-       number1 == FIRST_NUMBER && number2 == SECOND_NUMBER -> println("Поздравляем! Вы выиграли главный приз!")
-       number1 == FIRST_NUMBER || number2 == SECOND_NUMBER -> println("Вы выиграли утешительный приз!")
+       (number1 == FIRST_NUMBER && number2 == SECOND_NUMBER) || (number1 == SECOND_NUMBER && number2 == FIRST_NUMBER) -> println("Поздравляем! Вы выиграли главный приз!")
+       number1 == FIRST_NUMBER || number2 == SECOND_NUMBER || number1 == SECOND_NUMBER || number2 == FIRST_NUMBER -> println("Вы выиграли утешительный приз!")
        else -> println("Неудача! Крутите барабан!\nНомера победители 21 и 49")
    }
 }

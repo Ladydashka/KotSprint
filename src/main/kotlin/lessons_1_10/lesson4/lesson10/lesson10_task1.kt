@@ -19,12 +19,3 @@ package lessons_1_10
    val value2 = (1..6).random()
    return value1 + value2
   }
-
-
-
-
-
-
-
-
-
